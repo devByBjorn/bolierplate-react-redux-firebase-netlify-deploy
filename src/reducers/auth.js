@@ -1,4 +1,3 @@
-
 /* 
   "Reducers specify how the application's state changes in response to actions sent to the store. Remember that actions only describe what happened, but don't describe how the application's state changes."
   - https://redux.js.org/basics/reducers -
@@ -8,9 +7,8 @@
   hold by the authReducer. 
 
   LOGOUT
-  When action type LOGOUT is trigger it will clear the state, returnin an empty object.  
+  When action type LOGOUT is trigger it will clear the state, returning an empty object.  
 */
-
 
 const authReducer = (state = {}, action) => {
   switch (action.type) {

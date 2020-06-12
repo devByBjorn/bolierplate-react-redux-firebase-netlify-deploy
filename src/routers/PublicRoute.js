@@ -7,14 +7,14 @@ import { Route, Redirect } from 'react-router-dom'
     See PrivateRoute.js for a deeper explination of the component. 
   ///
 
-  Public route is only ment to route users that are not logged in. To accomplish this we
-  check the authentication state to se if a user is loged in or nor. Authentication state is found in our store in object authReducer 
-  and porperty uid. If an uid does not exsist the user is not loged in, and isAuthenticated will be false. If an uid does exsist the 
-  user is loged in and isAuthenticated will be true.
+  PublicRoute is only ment to route users that are not logged in. To accomplish this we check the authentication state 
+  to se if a user is loged in or nor. Authentication state is found in our store in object authReducer and porperty uid. 
+  If an uid does not exsist the user is not loged in, and isAuthenticated will be false. If an uid does exsist the user 
+  is loged in and isAuthenticated will be true.
   
   We use Redirect provided by react router dom to automatically redirect a loged in user to the 
-  /dashboard page, if we did not set up this conditional the loged in users would automatically be redirected to the landing page where 
-  the login page is("/"), which makes for a bad user experience. 
+  "/dashboard" page, if we do not set up this conditional the loged in users will automatically be redirected to the landing page 
+  where  the login page is("/"), which makes for a bad user experience. 
 */
 
 export const PublicRoute = ({ component: Component, ...rest }) => {

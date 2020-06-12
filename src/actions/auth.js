@@ -6,7 +6,6 @@
 
 */
 
-
 import { firebase, googleAuthProvider } from '../firebase/firebase'
 
 const login = (uid) => ({

@@ -16,7 +16,7 @@ import PublicRoute from './PublicRoute'
 
   https://www.npmjs.com/package/history - the history package makes it possible for us to manually create our own history. We do that by assigning the variable "history" below the value of createBrowserHistory(). By createing this variable we can export it and use the history where ever we like, not just in the in our Router.  
 
-  BrowserRouter has the history porp built in, but then we can not export the history and use it in other files. 
+  BrowserRouter has the history prop built in, but then we can not export the history and use it in other files. 
 */
 
 export const history = createBrowserHistory()
