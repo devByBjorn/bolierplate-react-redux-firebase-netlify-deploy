@@ -19,7 +19,7 @@
 	Build command: yarn run build:prod <br>
 	Publish directory:</bold> public
 
-8. Add SDK same SDK scripts as in your .env.development file to your Netlify site. Go to site - Deploys - Deploy settings - Build & deploy - Enviorment. Under Enviorment variabels add all the SDK scripts from your .env.development file. 
+8. In your .env.development file add the SDK scripts in your .env.development file to your Netlify site. Go to site - Deploys - Deploy settings - Build & deploy - Enviorment. Under Enviorment variabels add all the SDK scripts from your .env.development file. Trigger deploy again.
 
 9. Go to firebase - the project - authentication - sing in method - and scroll down to authorized domain and Add domian. Add your netlify domain (without https:// ).
 10. Visit netlify url and click the login button. If you can login with your google account you should see the dashboard page. If not, open the console and look for errors. Google firebase leaves you with good error explinations. 
